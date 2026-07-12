@@ -122,3 +122,7 @@ Principal Component Analysis (PCA) identifies the direction along which the data
 That principal direction closely approximates the unknown rotation angle and provides an excellent initial angle.(this angle was found 28.48 so close to the late optimized 30 degree)
 
 Rather than starting from a random guess, the optimization now begins with a geometrically meaningful estimate of $\theta$, greatly improving convergence.
+
+<p align="center">
+  <img src="images/pca1.png" width="700">
+</p>
