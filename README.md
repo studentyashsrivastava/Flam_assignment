@@ -15,5 +15,16 @@ The recovered parameters are
 | Horizontal Translation ($X$) |   **55** |
 
 ## Interactive Visualization
+The recovered parameters give the final latex string along with the Desmos link.
+$$
+\left(
+t\cos(0.523599)
+-e^{0.03|t|}\sin(0.3t)\sin(0.523599)+55,
+;
+42+t\sin(0.523599)
++e^{0.03|t|}\sin(0.3t)\cos(0.523599)
+\right)
+$$
 
+for $t\in[6,60]$.
 **Desmos:** **https://www.desmos.com/calculator/huxiiwkftc**
