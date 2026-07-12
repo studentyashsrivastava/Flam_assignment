@@ -18,13 +18,7 @@ The recovered parameters are
 The recovered parameters give the final latex string along with the Desmos link.
 
 $$
-\left(
-t\cos(0.523599)
--e^{0.03|t|}\sin(0.3t)\sin(0.523599)+55,
-;
-42+t\sin(0.523599)
-+e^{0.03|t|}\sin(0.3t)\cos(0.523599)
-\right)
+\left(t\cos(0.523599)-e^{0.03\left|t\right|}\sin(0.3t)\sin(0.523599)+55,\ 42+t\sin(0.523599)+e^{0.03\left|t\right|}\sin(0.3t)\cos(0.523599)\right)
 $$
 
 for $t\in[6,60]$.
@@ -145,3 +139,8 @@ Since the optimization now involves only three unknown parameters, it converges 
 Although the least square gives and an answer and we can see geometrically and mathematically that its close to correct there can still be a doubt that this is just a local minima instead of correct answer so to verify that Optuna model was used which again gave the same result for further verification.
 
 ---
+# Additional fun exploration facts and methods
+If we rotated  into the estimated local coordinate system the complex looking graph just becomes a growing sine wave function.
+<p align="center">
+  <img src="images/wave_without_rotation.png" width="700">
+</p>
