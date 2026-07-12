@@ -145,10 +145,28 @@ If we rotated  into the estimated local coordinate system the complex looking gr
   <img src="images/wave_without_rotation.png" width="700">
 </p>
 
-If we zoom out and look all this through the graphical method well notice that neigther theta nor X does anything to the graph pattern actually they just rotate and shift the graph so we should estimate M first.
+If we zoom out and look all this through the graphical method well notice that neither theta nor X does anything to the graph pattern actually they just rotate and shift the graph so we should estimate M first.
 
-## graphical method 1 to estimate m
-in this i used the fact that sin value become 1 at the peak so if take log of the v function it will essentially be a straight line whose slope gives the value of M.
+## Graphical Method 1: Estimating $M$
+In this i used the fact that sin value become 1 at the peak so if take log of the v function it will essentially be a straight line whose slope gives the value of M.
+<p align="center">
+  <img src="images/m_estimate_fromslope.png" width="700">
+</p>
+
+---
+## Graphical Method 2: Estimating $M$
+
+In this, I used the fact that the curvature of $v$ depends on the value of $M$:
+
+$$
+\kappa(t)=
+\frac{|v''(t)|}
+{\left(1+(v'(t))^2\right)^{3/2}}.
+$$
+
+So, the value of $M$ estimated using curvature is:
+
 <p align="center">
   <img src="images/m_estimate_curvebending.png" width="700">
 </p>
+
