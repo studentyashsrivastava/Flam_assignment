@@ -73,3 +73,52 @@ For a dataset containing roughly 1500 points, this leads to an optimization prob
 The challenge is therefore not just estimating the parameters, but reducing the dimensionality of the problem itself.
 
 ---
+# Key Mathematical Observation
+
+The nonlinear part of the curve always appears together as
+
+$$
+e^{M|t|}\sin(0.3t).
+$$
+
+Instead of treating the entire expression as complicated, define
+
+$$
+u=t
+$$
+
+and
+
+$$
+v=e^{M|t|}\sin(0.3t).
+$$
+
+The original equations become
+
+$$
+x-X=u\cos\theta-v\sin\theta
+$$
+
+$$
+y-42=u\sin\theta+v\cos\theta.
+$$
+
+This reveals that the observed point cloud is simply a **rotated and translated version of the underlying $(u,v)$ curve**.
+
+The optimization no longer needs to estimate one hidden variable for every point. Instead, the entire problem reduces to estimating only three global parameters:
+
+* $\theta$
+* $M$
+* $X$
+
+
+---
+# Estimating the Initial Rotation(brute force) with PCA
+
+Although the curve contains oscillations, its overall geometry is dominated by the parameter $t$, causing the point cloud to extend much farther in one direction than the other.
+
+Principal Component Analysis (PCA) identifies the direction along which the data has maximum variance.
+
+That principal direction closely approximates the unknown rotation angle and provides an excellent initial angle.(this angle was found 28.48 so close to the late optimized 30 degree)
+
+Rather than starting from a random guess, the optimization now begins with a geometrically meaningful estimate of $\theta$, greatly improving convergence.
