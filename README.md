@@ -61,3 +61,15 @@ The objective is to recover
 * $X$
 
 ---
+
+# Why This Problem Is Difficult
+
+A straightforward approach would attempt to optimize every unknown simultaneously.
+
+Besides the three global parameters $(\theta, M, X)$, each observed point also has its own hidden parameter $t$.
+
+For a dataset containing roughly 1500 points, this leads to an optimization problem with more than **1500 unknown variables**, making direct optimization impractical.
+
+The challenge is therefore not just estimating the parameters, but reducing the dimensionality of the problem itself.
+
+---
