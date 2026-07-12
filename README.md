@@ -126,3 +126,20 @@ Rather than starting from a random guess, the optimization now begins with a geo
 <p align="center">
   <img src="images/pca1.png" width="700">
 </p>
+
+---
+# Nonlinear Least-Squares Optimization
+
+Starting from the PCA initialization, nonlinear least-squares optimization simultaneously refines
+
+* $\theta$
+* $M$
+* $X$
+
+by minimizing the residual between the observed points and the reconstructed parametric curve.
+
+Since the optimization now involves only three unknown parameters, it converges reliably to the original solution.
+---
+# Doubt verification
+Although the least square gives and an answer and we can see geometrically and mathematically that its close to correct there can still be a doubt that this is just a local minima instead of correct answer so to verify that Optuna model was used which again gave the same result for further verification.
+---
