@@ -17,9 +17,9 @@ The recovered parameters are
 ## Interactive Visualization
 The recovered parameters give the final latex string along with the Desmos link.
 
-$$
+
 \left(t\cos(0.523599)-e^{0.03\left|t\right|}\sin(0.3t)\sin(0.523599)+55,\ 42+t\sin(0.523599)+e^{0.03\left|t\right|}\sin(0.3t)\cos(0.523599)\right)
-$$
+
 
 for $t\in[6,60]$.
 
@@ -143,4 +143,12 @@ Although the least square gives and an answer and we can see geometrically and m
 If we rotated  into the estimated local coordinate system the complex looking graph just becomes a growing sine wave function.
 <p align="center">
   <img src="images/wave_without_rotation.png" width="700">
+</p>
+
+If we zoom out and look all this through the graphical method well notice that neigther theta nor X does anything to the graph pattern actually they just rotate and shift the graph so we should estimate M first.
+
+## graphical method 1 to estimate m
+in this i used the fact that sin value become 1 at the peak so if take log of the v function it will essentially be a straight line whose slope gives the value of M.
+<p align="center">
+  <img src="images/m_estimate_curvebending.png" width="700">
 </p>
