@@ -28,4 +28,36 @@ t\cos(0.523599)
 $$
 
 for $t\in[6,60]$.
+
 **Desmos:** **https://www.desmos.com/calculator/huxiiwkftc**
+
+# Problem Statement
+
+The dataset points are generated from the parametric equations
+
+$$
+x(t)=t\cos\theta-e^{M|t|}\sin(0.3t)\sin\theta+X
+$$
+
+$$
+y(t)=42+t\sin\theta+e^{M|t|}\sin(0.3t)\cos\theta
+$$
+
+where
+
+* $t\in[6,60]$
+* $\theta$ is an unknown rotation angle
+* $M$ controls exponential growth
+* $X$ is an unknown horizontal translation
+
+Only the $(x,y)$ coordinates are given.
+
+The points are **unordered** (as shown by graph in notebook), meaning the original parameter value $t$ corresponding to each point is completely unknown.
+
+The objective is to recover
+
+* $\theta$
+* $M$
+* $X$
+
+---
