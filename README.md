@@ -16,6 +16,7 @@ The recovered parameters are
 
 ## Interactive Visualization
 The recovered parameters give the final latex string along with the Desmos link.
+
 $$
 \left(
 t\cos(0.523599)
