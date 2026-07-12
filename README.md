@@ -113,7 +113,7 @@ The optimization no longer needs to estimate one hidden variable for every point
 
 
 ---
-# Estimating the Initial Rotation(brute force) with PCA
+# Estimating the Rotation with PCA
 
 Although the curve contains oscillations, its overall geometry is dominated by the parameter $t$, causing the point cloud to extend much farther in one direction than the other.
 
