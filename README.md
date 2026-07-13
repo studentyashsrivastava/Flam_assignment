@@ -136,7 +136,7 @@ Since the optimization now involves only three unknown parameters, it converges 
 
 ---
 # Doubt verification
-Although the least square gives and an answer and we can see geometrically and mathematically that its close to correct there can still be a doubt that this is just a local minima instead of correct answer so to verify that Optuna model was used which again gave the same result for further verification.
+Although the least square gives and an answer and we can see geometrically and mathematically that its close to correct there can still be a doubt that this is just a local minima instead of correct answer so to verify that Optuna model was used which again verified the same result.
 
 ---
 # Additional fun exploration facts and methods
@@ -170,3 +170,7 @@ So, the value of $M$ estimated using curvature is:
   <img src="images/m_estimate_curvebending.png" width="700">
 </p>
 
+---
+## References
+
+Akiba, T., Sano, S., Yanase, T., Ohta, T., & Koyama, M. (2019). *Optuna: A next-generation hyperparameter optimization framework*. Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, 2623–2631.
